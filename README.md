@@ -14,7 +14,7 @@ GitHub: https://github.com/shangfr/Chinese-Synonyms
 ====
 
 -  支持同义词查询
--  支持自定义词典
+-  支持自定义词典 > 已删除
 -  Apache License 2.0 授权协议
 
 在线演示： 
@@ -22,11 +22,9 @@ GitHub: https://github.com/shangfr/Chinese-Synonyms
 安装说明
 ========
 
--  全自动安装： ``easy_install cnsyn`` 或者  ``pip install cnsyn``
--  半自动安装：先下载 https://pypi.python.org/pypi/cnsyn/ ，解压后运行
-   python setup.py install
--  手动安装：将 cnsyn 目录放置于当前目录或者 site-packages 目录
--  通过 ``import cnsyn`` 来引用
+-  全自动安装：``pip install cnsyn``
+-  半自动安装：先下载 https://pypi.python.org/pypi/cnsyn/ ，解压后运行 ``python setup.py install``
+-  手动安装：将 cnsyn 目录放置于当前目录或者 site-packages 目录，通过 ``import cnsyn`` 来引用。
 
 代码示例
 ========
@@ -36,7 +34,7 @@ GitHub: https://github.com/shangfr/Chinese-Synonyms
 import cnsyn
 
 cnsyn.search('垃圾')
-```
+
 输出:
 -------搜索已经完成-------
 Out[2]: 
@@ -56,3 +54,4 @@ Out[2]:
          '垃圾',
          '废物',
          '下脚']
+```
