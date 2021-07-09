@@ -131,3 +131,5 @@ research/using_emb/batch_neg_v1.0/model_state.pdparams
 research/using_emb/chinese_dictionary/words_id_emb.npy
 research/using_emb/query/words_tree.m
 cnsyn/query/words_tree.m
+research/using_emb/query/words_tree_mini.m
+cnsyn/query/words_tree_mini.m

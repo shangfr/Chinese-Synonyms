@@ -28,3 +28,7 @@ setuptools.setup(name='cnsyn',
                  # install_requires=['whoosh'],  # Optional
                  package_data={'cnsyn': ['*.*', 'query/*', 'chinese_dictionary/*']}
                  )
+
+# python setup.py sdist bdist_wheel
+# twine upload --repository pypitest dist/*
+# twine upload dist/*
