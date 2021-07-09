@@ -11,7 +11,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 
 setuptools.setup(name='cnsyn',
-                 version='0.0.2',
+                 version='1.0.0',
                  description='Query tools for Chinese Synonyms',
                  long_description=long_description,
                  long_description_content_type="text/markdown",
@@ -26,5 +26,9 @@ setuptools.setup(name='cnsyn',
                  keywords='NLP,simwords,Chinese Synonyms',
                  packages=setuptools.find_packages(),
                  # install_requires=['whoosh'],  # Optional
-                 package_data={'cnsyn': ['*.*', 'query/*']}
+                 package_data={'cnsyn': ['*.*', 'query/*', 'chinese_dictionary/*']}
                  )
+
+# python setup.py sdist bdist_wheel
+# twine upload --repository pypitest dist/*
+# twine upload dist/*
