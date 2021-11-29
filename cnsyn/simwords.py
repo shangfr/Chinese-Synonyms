@@ -15,7 +15,7 @@ INDEX_DIR = pkg_resources.resource_filename('cnsyn', 'query')
 ix = open_dir(INDEX_DIR)
 
 
-words_tree = joblib.load(INDEX_DIR+'/words_tree.m')
+words_tree = joblib.load(INDEX_DIR+'\\words_tree.m')
 
 tree_model = words_tree['model']
 words_id = words_tree['words']
