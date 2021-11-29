@@ -1,5 +1,6 @@
 # Chinese-Synonyms
-Chinese Synonyms 中文同义词查询工具包
+
+Chinese Synonyms 中文同义词查询工具包 
 Chinese Synonyms for Natural Language Processing and Understanding.
 
 cnsyn
@@ -30,20 +31,23 @@ GitHub: https://github.com/shangfr/Chinese-Synonyms
 
 同义词库说明
 ========
+
 - 1、wiki：通过维基百科构建的一个中文同义词库-AitSimwords.txt；
 - 2、cndict：中文同义词字典-chinese_dictionary.txt；
-- 3、words_id_emb: 基于PaddleNLP开源语义模型(batch_neg_v1.0)获取的词向量,合并wiki、cndict词库，共计129691个词； 
+- 3、words_id_emb: 基于PaddleNLP开源语义模型 [batch_neg_v1.0](https://paddlenlp.bj.bcebos.com/models/semantic_index/batch_neg_v1.0.tar) 进行Embedding语义表示抽取，获得每个词的词向量。合并wiki、cndict词库，共计129691个词； 
 
 查询原理
 ========
-- 基于词的传统召回
+
+- 基于词的传统召回 
     基于倒排索引，当用户输入查询词后，根据该词到倒排索引中进行查找该词的同义词。
     
-- 基于向量的语义召回
-    基于KNN-BallTree算法，找出某一个词向量最相近的词集合；
+- 基于向量的语义召回 
+    基于KNN-BallTree算法，找出某一个词向量最相近的词集合；(词>同义词向量>降维>语义索引（BallTree算法）)
 
 代码示例
 ========
+
 ```python
 # encoding=utf-8
 
