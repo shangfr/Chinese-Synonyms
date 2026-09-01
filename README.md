@@ -16,7 +16,7 @@ GitHub: https://github.com/shangfr/Chinese-Synonyms
 ## 安装
 
 ```bash
-pip install cnsyn           # 或从源码：pip install -e .
+pip install cnsyn-2.0.0-py3-none-any.whl           # 或从源码：pip install -e .
 pip install "cnsyn[fuzzy]"   # 可选：模糊匹配
 pip install "cnsyn[pinyin]"  # 可选：拼音查询
 ```
@@ -63,7 +63,7 @@ cnsyn 垃及 --fuzzy
 
 ## API
 
-### `cnsyn.search(word, topK=10, origin='all', *, fuzzy=False, pinyin=False) -> list[str]`
+`cnsyn.search(word, topK=10, origin='all', *, fuzzy=False, pinyin=False) -> list[str]`
 
 | 参数 | 说明 |
 | --- | --- |
